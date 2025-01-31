@@ -21,12 +21,12 @@ def print_messages():
         elif message.msg_type == "tool_result":
             if message.tool_name == "web_search":
                 with st.expander(
-                    f"✅ {message.tool_name}", expanded=True
+                    f"✅ {message.tool_name}"
                 ):  # ✅ 검색 결과 유지
                     st.markdown(message.chat_message.content)
             elif message.tool_name == "pdf_retriever":
                 with st.expander(
-                    f"✅ {message.tool_name}", expanded=True
+                    f"✅ {message.tool_name}"
                 ):  # ✅ 검색 결과 유지
                     st.markdown(message.chat_message.content)
 
