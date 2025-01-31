@@ -1,11 +1,11 @@
 # 프로젝트 소개
-- 개인 맞춤형 상담 봇으로, 개인정보를 입력하면 해당 정보에 부합하는 상담봇 페르소나가 지정됩니다.
+- 개인 맞춤형 상담 봇으로, 개인정보를 입력하면 아래와 같은 프로프트를 이용해 주어진 개인정보에 부합하는 상담봇 페르소나가 지정됩니다.
+<img width="592" alt="image" src="https://github.com/user-attachments/assets/f5b8f187-c59f-48a8-a668-43761c782409" />
+
 - 일반적으로 공감과 위로를 얻을 수 있는 챗봇이고, pdf retriever, web search tool을 이용해 정보를 얻을 수도 있습니다.
 - pdf파일을 원하는 파일로 바꾸려면 data폴더 내에 파일을 변경하고, modules/bk_tools.py로 들어가 파일 이름을 변경해주시면 됩니다.
 - 다른 tool을 추가하기 위해서는 sidebar.py 부분에서 다른 tool을 추가하고, modules/agent.py부분에서 프롬프트를 수정해 사용하실 수 있습니다.
 - 챗봇 사용 링크 : https://chatbot-for-survey.streamlit.app/
-
-<img width="592" alt="image" src="https://github.com/user-attachments/assets/f5b8f187-c59f-48a8-a668-43761c782409" />
 
 
 
