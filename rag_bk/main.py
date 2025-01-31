@@ -14,7 +14,6 @@ langsmith("챗봇상담")
 st.set_page_config(
     page_title="챗봇상담",  # 페이지 제목
     page_icon="💬",  # 페이지 아이콘 (이모지 또는 URL)
-    layout="wide",  # 레이아웃: "centered" (기본값) 또는 "wide"
 )
 
 st.title("챗봇상담 💬")
