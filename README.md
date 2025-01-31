@@ -5,7 +5,8 @@
 - 다른 tool을 추가하기 위해서는 sidebar.py 부분에서 다른 tool을 추가하고, modules/agent.py부분에서 프롬프트를 수정해 사용하실 수 있습니다.
 - 챗봇 사용 링크 : https://chatbot-for-survey.streamlit.app/
 
-<img width="257" alt="image" src="https://github.com/user-attachments/assets/9c107431-278e-4b7c-abe4-3a79d194385d" />
+<img width="592" alt="image" src="https://github.com/user-attachments/assets/f5b8f187-c59f-48a8-a668-43761c782409" />
+
 
 
 ## 설치
