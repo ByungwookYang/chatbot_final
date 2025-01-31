@@ -19,8 +19,16 @@ def print_messages():
                 message.chat_message.content
             )
         elif message.msg_type == "tool_result":
-            with st.expander(f"✅ {message.tool_name}"):
-                st.markdown(message.chat_message.content)
+            if message.tool_name == "web_search":
+                with st.expander(
+                    f"✅ {message.tool_name}", expanded=True
+                ):  # ✅ 검색 결과 유지
+                    st.markdown(message.chat_message.content)
+            elif message.tool_name == "pdf_retriever":
+                with st.expander(
+                    f"✅ {message.tool_name}", expanded=True
+                ):  # ✅ 검색 결과 유지
+                    st.markdown(message.chat_message.content)
 
 
 # 새로운 메시지를 추가
@@ -34,23 +42,15 @@ def add_message(role, message, msg_type="text", tool_name=""):
             )
         )
     elif msg_type == "tool_result":
-        if tool_name == "web_search":
-            st.session_state["messages"].append(
-                ChatMessageWithType(
-                    chat_message=ChatMessage(
-                        role="assistant", content=format_search_result(message)
-                    ),
-                    msg_type="tool_result",
-                    tool_name=tool_name,
-                )
+        formatted_message = (
+            format_search_result(message)
+            if tool_name == "web_search"
+            else format_pdf_search_result(message)
+        )
+        st.session_state["messages"].append(
+            ChatMessageWithType(
+                chat_message=ChatMessage(role="assistant", content=formatted_message),
+                msg_type="tool_result",
+                tool_name=tool_name,
             )
-        elif tool_name == "pdf_search":
-            st.session_state["messages"].append(
-                ChatMessageWithType(
-                    chat_message=ChatMessage(
-                        role="assistant", content=format_pdf_search_result(message)
-                    ),
-                    msg_type="tool_result",
-                    tool_name=tool_name,
-                )
-            )
+        )
