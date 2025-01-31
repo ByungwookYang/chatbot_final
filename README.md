@@ -2,6 +2,7 @@
 
 본 프로젝트는 테디노트님의 깃허브 코드를 참고하여 만든 챗봇입니다.
 - 링크: https://link.teddynote.com/PERPLEX
+- 챗봇 사용 링크 : https://chatbot-for-survey.streamlit.app/
 
 
 ## 설치
