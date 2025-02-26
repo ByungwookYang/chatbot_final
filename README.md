@@ -87,7 +87,8 @@ system_prompt = (
 - pdf파일을 원하는 파일로 바꾸려면 data폴더 내에 파일을 변경하고, modules/bk_tools.py로 들어가 파일 이름을 변경해주시면 됩니다.
 - 다른 tool을 추가하기 위해서는 sidebar.py 부분에서 다른 tool을 추가하고, modules/agent.py부분에서 프롬프트를 수정해 사용하실 수 있습니다.
 - 챗봇 사용 링크 : https://chatbot-for-survey.streamlit.app/
-- 발표자료 : [RAG를 이용한 상담챗봇 발표자료.pdf](https://github.com/user-attachments/files/18976923/RAG.pdf)
+- 발표자료 : [RAG를 이용한 상담챗봇 발표자료.pdf](https://github.com/user-attachments/files/18976940/RAG.pdf)
+
 
 
 
