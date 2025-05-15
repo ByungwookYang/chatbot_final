@@ -103,7 +103,7 @@ system_prompt = (
 ## 📑 **구현 및 자료**
 
 [챗봇 사용 링크](https://chatbot-for-survey.streamlit.app/)
-- 자료 : [RAG를 이용한 상담챗봇 발표자료.pdf](https://github.com/user-attachments/files/18976940/RAG.pdf)
+[전체구현자료](https://github.com/user-attachments/files/18976940/RAG.pdf)
 
 
 
