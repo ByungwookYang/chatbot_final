@@ -16,7 +16,9 @@
 
 - 벡터 스토어에 정보가 부족할 경우, 웹 검색 기능을 통해 최신 정보까지 보완 가능하도록 설계
 
-### 프롬프트 구성:
+---
+
+## 🪄 **프롬프트 구성**:
 두개의 프롬프트로 구성되었습니다.
 
 상담봇 페르소나를 지정하는 프롬프트
@@ -96,8 +98,12 @@ system_prompt = (
 - 일반적으로 공감과 위로를 얻을 수 있는 챗봇이고, pdf retriever, web search tool을 이용해 정보를 얻을 수도 있습니다.
 - pdf파일을 원하는 파일로 바꾸려면 data폴더 내에 파일을 변경하고, modules/bk_tools.py로 들어가 파일 이름을 변경해주시면 됩니다.
 - 다른 tool을 추가하기 위해서는 sidebar.py 부분에서 다른 tool을 추가하고, modules/agent.py부분에서 프롬프트를 수정해 사용하실 수 있습니다.
-- 챗봇 사용 링크 : https://chatbot-for-survey.streamlit.app/
-- 발표자료 : [RAG를 이용한 상담챗봇 발표자료.pdf](https://github.com/user-attachments/files/18976940/RAG.pdf)
+
+---
+## 📑 **구현 및 자료**
+
+[챗봇 사용 링크](https://chatbot-for-survey.streamlit.app/)
+- 자료 : [RAG를 이용한 상담챗봇 발표자료.pdf](https://github.com/user-attachments/files/18976940/RAG.pdf)
 
 
 
